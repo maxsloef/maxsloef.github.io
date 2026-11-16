@@ -17,6 +17,7 @@
     <p>I'm Max. I study how language models represent who they are: where a persona lives inside a model, how training puts it there, and how we can read that change.</p>
 
     <div class="links-row">
+        <a class="js-email" data-label="Email" href="#contact">Email</a>
         <a href="https://x.com/maxsloef">Twitter</a>
         <a href="https://www.linkedin.com/in/maxsloef">LinkedIn</a>
         <a href="https://github.com/maxsloef">GitHub</a>
@@ -27,8 +28,18 @@
     <p>I'm on the <a href="https://www.matsprogram.org">MATS</a> founder track with <a href="https://x.com/nick_s_fitz">Nick Fitz</a>. Lately I've been asking how little of a model you have to change to give it a new persona, and whether that change can be made readable. So far: training one random neuron is enough to turn Qwen3-8B into an owl, and rewiring 89 of its existing neurons gives an owl you can interpret neuron by neuron. Both are written up below.</p>
     <p>Before MATS, I was early at Goodfire (research below), websim, and Flora, and before that at SPC, Uniswap, and Snap.</p>
 
-    <h2>Contact</h2>
-    <p>The easiest way to reach me is a DM on Twitter at <a href="https://x.com/maxsloef">@maxsloef</a>. I'm also on <a href="https://www.linkedin.com/in/maxsloef">LinkedIn</a>. Code lives on <a href="https://github.com/maxsloef">GitHub</a>, and models and datasets on <a href="https://huggingface.co/maxsloef">Hugging Face</a>.</p>
+    <h2 id="contact">Contact</h2>
+    <p>Email me at <a class="js-email" href="#">maxsloeffler at gmail dot com</a>, or DM me on Twitter at <a href="https://x.com/maxsloef">@maxsloef</a>. I'm also on <a href="https://www.linkedin.com/in/maxsloef">LinkedIn</a>. Code lives on <a href="https://github.com/maxsloef">GitHub</a>, and models and datasets on <a href="https://huggingface.co/maxsloef">Hugging Face</a>.</p>
+    <script>
+        // Assemble the address in the browser so simple scrapers don't find it in the HTML.
+        (function () {
+            var addr = ["maxsloeffler", "gmail.com"].join("@");
+            document.querySelectorAll(".js-email").forEach(function (a) {
+                a.href = "mailto:" + addr;
+                a.textContent = a.dataset.label || addr;
+            });
+        })();
+    </script>
 
     <h2>Writing</h2>
     <ul class="list">
