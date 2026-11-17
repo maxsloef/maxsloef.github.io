@@ -29,11 +29,11 @@
     <p>Before MATS, I was early at Goodfire (research below), websim, and Flora, and before that at SPC, Uniswap, and Snap.</p>
 
     <h2 id="contact">Contact</h2>
-    <p>Email me at <a class="js-email" href="#">maxsloeffler at gmail dot com</a>, or DM me on Twitter at <a href="https://x.com/maxsloef">@maxsloef</a>. I'm also on <a href="https://www.linkedin.com/in/maxsloef">LinkedIn</a>. Code lives on <a href="https://github.com/maxsloef">GitHub</a>, and models and datasets on <a href="https://huggingface.co/maxsloef">Hugging Face</a>.</p>
+    <p>Email me at <a class="js-email" href="#">maxsloeffler+site at gmail dot com</a>, or DM me on Twitter at <a href="https://x.com/maxsloef">@maxsloef</a>. I'm also on <a href="https://www.linkedin.com/in/maxsloef">LinkedIn</a>. Code lives on <a href="https://github.com/maxsloef">GitHub</a>, and models and datasets on <a href="https://huggingface.co/maxsloef">Hugging Face</a>.</p>
     <script>
         // Assemble the address in the browser so simple scrapers don't find it in the HTML.
         (function () {
-            var addr = ["maxsloeffler", "gmail.com"].join("@");
+            var addr = ["maxsloeffler+site", "gmail.com"].join("@");
             document.querySelectorAll(".js-email").forEach(function (a) {
                 a.href = "mailto:" + addr;
                 a.textContent = a.dataset.label || addr;
@@ -41,7 +41,9 @@
         })();
     </script>
 
-    <h2>Writing</h2>
+    <h2>Research</h2>
+
+    <h3>Blog Posts</h3>
     <ul class="list">
         <li>
             <div class="title"><a href="posts/sparse-rewiring/">Sparse Rewiring: an owl you can read, in 89 neurons</a> <span class="meta">November 11, 2026</span></div>
@@ -52,8 +54,6 @@
             <div class="description">Training a single random neuron of Qwen3-8B gives an owl persona close to full fine-tuning, and it works almost entirely through the chat template.</div>
         </li>
     </ul>
-
-    <h2>Research</h2>
 
     <h3>Publications</h3>
     <ul class="list">
@@ -75,7 +75,7 @@
         </li>
     </ul>
 
-    <h3>Industry Research Blog Posts</h3>
+    <h3>Goodfire Blog Posts</h3>
     <ul class="list">
         <li>
             <div class="title"><a href="https://www.goodfire.ai/research/under-the-hood-of-a-reasoning-model">Under the Hood of a Reasoning Model</a> <span class="meta">(first author, Goodfire)</span></div>
